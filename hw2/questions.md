@@ -75,3 +75,48 @@
 * `np.where` <--
 * `np.get`
 * `np.show`
+# 3 Measuring Success
+## 3.1 Why split data?
+1. What ultimate goal drives our desire to split our data?
+* Trying to build a generalizable model <--
+* Testing which data to train on
+* There is no reason
+* See how much data we need to train on
+2. What are the three datasets we need to create?
+* Train, test, question
+* Train, copy, split
+* Train, test, validation <--
+* Validation, deploy, test
+## 3.2 Split data
+1. What's an appropriate percent for the validation set?
+* 90%
+* 2%
+* 5%
+* 20% <--
+2. If we want our splits to be reproducible which parameter of `train_test_split` would we explicitly provide?
+* `random_state` <--
+* `do_over`
+* `reproduce_number`
+* `state`
+## 3.3 What is cross-validation?
+1. What is k-fold cross validation?
+* Partition dataset into k+1 sets, train on k and test on k+1
+* Partition dataset into k sets, train on k-1 and test on k
+* Partition dataset into k sets, train on k-2, test on k-1, and validation on k
+* Partition dataset into k sets and train on a random number of k-n, test on n  
+2. What statistic is used to define the performance in k-fold cross validation?
+* Mean <--
+* Max
+* Floor
+* Ceiling
+## 3.4 Evaluation framework
+1. We want to know the ratio of true positives to all predictions, which stat do we want?
+* Recall
+* Precision <--
+* Sensitivity
+* Generalization
+2. What does recall give us?
+* The ratio of true negatives to false negatives
+* The ratio of total negatives to correctly predicted negatives
+* The ratio of true positives to total positive class instances <--
+* The ratio of true negatives to total negative class instances
