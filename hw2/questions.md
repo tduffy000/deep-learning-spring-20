@@ -120,3 +120,70 @@
 * The ratio of total negatives to correctly predicted negatives
 * The ratio of true positives to total positive class instances <--
 * The ratio of true negatives to total negative class instances
+# 4 Optimizing a model
+## 4.1 Bias / Variance trade-off
+1. What is bias in the context of this lesson?
+* A shift parameter
+* Tendency to consistently learn the wrong thing by not considering all available information <--
+* The available signal-to-noise ratio
+* Your assumptions about the data
+2. What is variance in the context of this lesson?
+* The algorithm's sensitivity to changes in the data <--
+* The squared distance from the mean
+* The available signal-to-noise ratio
+* How much you can shift the bias and still get it right
+## 4.2 Underfitting
+1. Total error is...
+* (Bias + Variance) + Noise <--
+* (Bias - Variance)
+* (Bias + Variance)
+* (Bias - Variance) + Noise
+2. Underfitting is _always_ result of
+* The model not capturing the underlying trend of the data <--
+* Not including enough parameters in our model
+* Not normalizing our features
+* Using the wrong model architecture
+## 4.3 Overfitting
+1. Overfitting can be caused by...
+* Not normalizing our features
+* Over-parameterizing our model on small amounts of data <--
+* Using all available features
+* Normalizing our features
+2. What can a decision boundary tell us about overfitting
+* If it's not smooth enough we might have overfit <--
+* If its too smooth we might have overfit
+* It can't tell us anything
+* If it's shifted we might have overfit
+## 4.4 Optimal trade-off
+1. What trade-off are we optimizing for?
+* Bias v Variance <--
+* Error v Total error
+* Accuracy v error
+* In-sample v out-of-sample
+2. What metric tells us we're doing something right?
+* Train accuracy
+* Test error <-
+* Train error
+* Sensitivity
+## 4.5 Hyperparameter tuning
+1. How do we define a hyperparameter?
+* A weight within the model
+* An output value
+* A model configuration <--
+* A bias measure
+2. Which one of these is _not_ a hyperparameter for a Decision Tree?
+* max_depth
+* min_split
+* accuracy threshold <--
+* split metric (e.g. entropy)
+## 4.6 Regularization
+1. Regularization defends us against...
+* Overfitting <--
+* Underfitting
+* Over Bias
+* Not converging
+2. Which one of these is _not_ a regularization technique?
+* Ridge regression
+* Lasso regression
+* Dropout
+* Test twice <--
